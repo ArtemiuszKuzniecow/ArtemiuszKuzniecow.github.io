@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, and more.">
+        content="Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more.">
+    <meta name="keywords"
+        content="Frontend Developer, HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more.">
     <meta name="keywords"
         content="Frontend Developer, HTML, CSS, JavaScript, TypeScript, React, Vue.js, Redux, MobX, NodeJS, Express">
     <meta name="author" content="Artem Kuznetsov">
@@ -16,40 +18,110 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
 
         body {
-            display: grid;
-            grid-template-columns: 1fr 210px;
-            grid-template-rows: auto 1fr;
-            gap: 5px 15px;
             margin: 0 auto;
             font-family: sans-serif;
             font-size: 14px;
-            padding: 0 20px;
+            padding: 0 10px;
             box-sizing: border-box;
-            max-height: 1280px;
-            aspect-ratio: 210 / 297;
-            overflow: hidden;
+            max-width: 800px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
 
-        header {
-            grid-area: 1 / 1 / 2 / 2;
+        h1, h2, h3, h4, h5, h6 {
+            margin: 5px 0;
+            padding: 0;
         }
 
-        aside {
-            grid-area: 1 / 2 / 3 / 3;
-            border-left: 1px solid #ddd;
-            padding-left: 10px;
-        }
-
-        div {
+        .header {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            padding: 5px 0;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            padding:5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex: 1;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid currentColor;
+        }
+
+        .section {
+            margin: 5px 0;
+            padding: 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .experience-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .skill {
+            background-color: #f0f0f0;
+            padding: 1px 2px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .invisible {
+            color: transparent;
+            height: 0;
+            width: 0;
         }
 
         a {
@@ -58,16 +130,12 @@
             border-bottom: 1px solid currentColor;
         }
 
-        article {
-            margin: 15px 0;
+        ul {
+            padding-left: 20px;
         }
 
-        dt {
+        li {
             margin: 5px 0;
-        }
-
-        h4 {
-            margin: 5px;
         }
     </style>
     <script type="application/ld+json">
@@ -87,189 +155,174 @@
           "sameAs": [
             "https://www.linkedin.com/in/kuznetsov-artem/"
           ],
-          "description": "Experienced front-end developer with more than 3 years of expertise in HTML, CSS, JavaScript, TypeScript, and frameworks like React, Vue.js, Redux, MobX, Zustand, Vuex and Pinia."
+          "description": "Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more."
         }
       </script>
 </head>
 
 <body>
-    <header>
-        <h2>ARTEM KUZNETSOV</h2>
-        <h4>FRONTEND DEVELOPER</h4>
-        <p>
-            Experienced front-end developer with more than <strong>3 years</strong> of expertise in
-            <strong>HTML</strong>, <strong>CSS</strong>,
-            <strong>JavaScript</strong>, <strong>TypeScript</strong>, and
-            frameworks like <strong>React</strong>, <strong>Vue.js</strong>,
-            <strong>Redux</strong>, <strong>MobX</strong>,
-            <strong>Zustand</strong>, <strong>Vuex</strong> and
-            <strong>Pinia</strong>.
-        </p>
+    <header class="header">
+        <div class="header-title">
+            <h2>ARTEM KUZNETSOV</h2>
+            <h4>FRONTEND DEVELOPER</h4>
+        </div>
+        <div class="contact-info">
+            <a href="https://wa.me/381659970992">+381 65 9970 992</a>
+            <a href="mailto:a.kuznetsov.js@gmail.com">a.kuznetsov.js@gmail.com</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kuznetsov-artem/">LinkedIn</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://t.me/ArtyKuznetsov">Telegram</a>
+        </div>
     </header>
 
-
     <main>
-        <h4>WORK EXPERIENCE</h4>
-        <article>
-            <strong>Omnis.tec</strong>
-            <div>
-                <span>Frontend Developer</span>
-                <time>
-                    <i>March 2024 - Present</i>
-                </time>
-            </div>
-            <ul>
-                <li>
-                    Specializing in <strong>Vue 3</strong>, <strong>TypeScript</strong>,
-                    <strong>Vuex</strong>, <strong>Quasar</strong>, and
-                    <strong>Cypress</strong>.
-                </li>
-                <li>
-                    Developed applications for IT solutions, including CRM, loyalty
-                    programs, analytics, and marketing tools customized for Horeca and
-                    Retail industries, leading to a 30% increase in client engagement.
-                </li>
-                <li>
-                    Implemented <strong>e2e</strong> testing with
-                    <strong>Cypress framework</strong>, reducing the number of errors by 40%, resulting in a 25% decrease in bug-related support tickets.
-                </li>
-                <li>
-                    Introduced <strong>Confluence</strong>, agreements, and
-                    documentation for frontend developers and mobile developers, improving team efficiency by 20% and reducing onboarding time for new developers by 30%.
-                </li>
-            </ul>
-        </article>
+        <section class="section">
+            <h4 class="section-title">ABOUT</h4>
+            <p>
+                Experienced front-end developer with more than <strong>4 years</strong> of expertise in
+                <strong>HTML</strong>, <strong>CSS</strong>,
+                <strong>JavaScript</strong>, <strong>TypeScript</strong>, and
+                frameworks like <strong>React</strong>, <strong>Vue.js</strong>,
+                <strong>Redux</strong>, <strong>MobX</strong>,
+                <strong>Zustand</strong>, <strong>Vuex</strong> and
+                <strong>Pinia</strong>.
+            </p>
+        </section>
 
-        <article>
-            <strong>SIMOURG</strong>
-            <div>
-                <span>Frontend Developer</span>
-                <time>
-                    <i>April 2023 - February 2024</i>
-                </time>
+        <section class="section">
+            <h4 class="section-title">SKILLS</h4>
+            <div class="skills">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">TypeScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Vue.js</span>
+                <span class="skill">Angular</span>
+                <span class="skill">Redux</span>
+                <span class="skill">MobX</span>
+                <span class="skill">Redux Toolkit</span>
+                <span class="skill">Pinia</span>
+                <span class="skill">Vuex</span>
+                <span class="skill">Zustand</span>
+                <span class="skill">GraphQL</span>
+                <span class="skill">SCSS</span>
+                <span class="skill">Tailwind</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Material UI</span>
+                <span class="skill">Quasar</span>
+                <span class="skill">Ant Design</span>
+                <span class="skill">Material UI</span>
+                <span class="skill">Cypress</span>
+                <span class="skill">Jest</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">WebSockets</span>
             </div>
-            <ul>
-                <li>
-                    Specialized in <strong>Vue 3</strong>, <strong>Pinia</strong>,
-                    <strong>GraphQL</strong>, and <strong>TypeScript</strong>.
-                </li>
-                <li>
-                    Developed a business application focused on creating custom CRM
-                    systems and BPMS.
-                </li>
-                <li>
-                    Wrote over 40% of all Cypress tests, significantly enhancing application reliability and reducing bugs by 30%.
-                </li>
-                <li>
-                    Added over 30 UI components, increasing the functionality and user experience of the application.
-                </li>
-            </ul>
-        </article>
-        
-        <article>
-            <strong>DaniKo IT</strong>
-            <div>
-                <span>Frontend Developer</span>
-                <time>
-                    <i>January 2023 - April 2023</i>
-                </time>
-            </div>
-            <ul>
-                <li>
-                    Specialized in <strong>TypeScript</strong>, <strong>React</strong>,
-                    <strong>Zustand</strong>, and <strong>ReactFlow</strong>.
-                </li>
-                <li>
-                    Created a web application chatbot constructor, similar
-                    to <strong>Manychat</strong>, allowing users to design and deploy customized chatbots
-                    for their businesses.
-                </li>
-            </ul>
-        </article>
-        
-        <strong>Early Career in the Field</strong>
+        </section>
 
-        <article>
-            <strong>TEAC</strong>
-            <div>
-                <span>Frontend Developer</span>
-                <time><i>September 2021 - December 2022</i></time>
-            </div>
-            <span>Stack:</span> <strong>React, Redux, Node, Vue.js, Jest, Vtest, Cypress</strong>
-        </article>
-        
-        <article>
-            <strong>O.K. RESEARCH OÜ</strong>
-            <div>
-                <span>Frontend Developer</span>
-                <time><i>September 2020 - September 2021</i></time>
-            </div>
-            <span>Stack:</span> <strong>React, Redux, TypeScript, Jest, Cypress</strong>
-        </article>
+        <section class="section">
+            <h4 class="section-title">EXPERIENCE</h4>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <strong>EVA.ai</strong>
+                        <i>(London, United Kingdom)</i>
+                    </div>
+                    <time><i>August 2024 - Present</i></time>
+                </div>
+                <div>Frontend Developer</div>
+                <ul>
+                    <li>
+                        Specializing in <strong>TypeScript</strong>, <strong>WebSockets</strong>, <strong>SCSS</strong>, and <strong>Bootstrap</strong>.
+                    </li>
+                    <li>
+                        Developed and maintained a CRM platform tailored for HR professionals, enhancing user experience and system performance across core business workflows.
+                    </li>
+                    <li>
+                        Oversaw error tracking and monitoring via Sentry, proactively identifying and resolving issues before release, which led to a 32% reduction in production bugs.
+                    </li>
+                    <li>
+                        Collaborated closely with QA and backend teams to ensure stable feature delivery and real-time functionality through WebSockets.
+                    </li>
+                    <li>
+                        Acted as the quality gatekeeper for production deployments, improving release reliability and increasing user satisfaction scores by 18%.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <strong>Omnis.tech (Project-based)</strong>
+                        <i>(Astana, Kazakhstan)</i>
+                    </div>
+                    <time><i>March 2024 - August 2024 (6 months)</i></time>
+                </div>
+                <div>Frontend Developer</div>
+                <ul>
+                    <li>
+                        Specializing in <strong>Vue 3</strong>, <strong>TypeScript</strong>,
+                        <strong>Vuex</strong>, <strong>Quasar</strong>, and
+                        <strong>Cypress</strong>.
+                    </li>
+                    <li>
+                        Developed applications for IT solutions, including CRM, loyalty
+                        programs, analytics, and marketing tools customized for Horeca and
+                        Retail industries, leading to a 30% increase in client engagement.
+                    </li>
+                    <li>
+                        Implemented <strong>e2e</strong> testing with
+                        <strong>Cypress framework</strong>, reducing the number of errors by 40%, resulting in a 25% decrease in bug-related support tickets.
+                    </li>
+                    <li>
+                        Introduced <strong>Confluence</strong>, agreements, and
+                        documentation for frontend developers and mobile developers, improving team efficiency by 20% and reducing onboarding time for new developers by 30%.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <strong>SIMOURG</strong>
+                        <i>(Astana, Kazakhstan)</i>
+                    </div>
+                    <time><i>April 2023 - March 2024 (1 year)</i></time>
+                </div>
+                <div>Frontend Developer</div>
+                <ul>
+                    <li>
+                        Developed a business application focused on creating custom CRM
+                        systems and BPMS.
+                    </li>
+                </ul>
+                <div>Stack: <strong>Vue 3, Pinia, GraphQL, TypeScript, WebSockets, SCSS, Cypress</strong></div>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <strong>DaniKo IT (Project-based)</strong>
+                        <i>(Astana, Kazakhstan)</i>
+                    </div>
+                    <time><i>January 2023 - April 2023 (4 months)</i></time>
+                </div>
+                <div>Frontend Developer</div>
+                <div>Stack: <strong>React, Redux, Node, Vue.js, Vitest, Cypress</strong></div>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <strong>O.K. RESEARCH OÜ</strong>
+                        <i>(Kohtla-Järve, Estonia)</i>
+                    </div>
+                    <time><i>September 2020 - December 2022 (2 years 4 months)</i></time>
+                </div>
+                <div>Frontend Developer</div>
+                <div>Stack: <strong>React, Redux, Node, Vue.js, Vitest, Cypress</strong></div>
+            </article>
+        </section>
     </main>
-
-    <aside>
-        <address>
-            <h4>Contact</h4>
-            <dl>
-                <dt>Location:</dt>
-                <dd>Belgrade, Serbia</dd>
-
-                <dt>Phone/Whatsapp/Viber:</dt>
-                <dd>
-                    <a href="tel:+381659970992">
-                        +381 65 9970 992
-                    </a>
-                </dd>
-
-                <dt>Telegram:</dt>
-                <dd>
-                    <a target="_blank" rel="noopener noreferrer" href="https://t.me/ArtyKuznetsov">
-                        @ArtyKuznetsov
-                    </a>
-                </dd>
-
-                <dt>Email:</dt>
-                <dd>
-                    <a href="mailto:a.kuznetsov.js@gmail.com">
-                        a.kuznetsov.js@gmail.com
-                    </a>
-                </dd>
-
-                <dt>LinkedIn:</dt>
-                <dd>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kuznetsov-artem/">
-                        linkedin.com/in/kuznetsov-artem/
-                    </a>
-                </dd>
-            </dl>
-        </address>
-
-        <section>
-            <h4>Skills</h4>
-            <ul>
-                <li>Developing SPA (Single Page Applications)</li>
-                <li>Code Review</li>
-                <li>Responsive Design</li>
-                <li>Performance Optimization</li>
-                <li>Cross-browser Compatibility</li>
-                <li>Version Control and Git Workflow</li>
-                <li>Build Tools</li>
-                <li>Continuous Integration / Continuous Deployment (CI/CD)</li>
-                <li>Code Quality Assurance</li>
-                <li>Unit Testing, Integration Testing, End-to-End Testing (e2e)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Technologies</h4>
-            HTML, CSS, JavaScript, TypeScript, React, Vue.js, Redux, MobX, RTK, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm
-        </section>
-
-        <section>
-            <h4>Education</h4>
-            <span>Result School (Professional Courses): Frontend Development and Advanced JavaScript</span>
-          </section>
-    </aside>
 </body>
 </html>
