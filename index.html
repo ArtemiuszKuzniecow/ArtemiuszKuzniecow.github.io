@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +7,7 @@
     <meta name="description"
         content="Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more.">
     <meta name="keywords"
-        content="Frontend Developer, HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more.">
+        content="Frontend Developer, HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, HTML, CSS, JavaScript, TypeScript, JSON, XML, Markdown, SQL, GraphQL, PHP, SCSS / Sass, Less, PostCSS, CSS Modules, Styled Components, React, Vue.js, Angular, Svelte, SolidJS, Next.js, Nuxt.js, Remix, Astro, Qwik, Redux, Redux Toolkit, MobX, Zustand, Pinia, Vuex, Recoil, Jotai, Effector, NgRx, Bootstrap, Tailwind CSS, Material UI (MUI), Ant Design, Quasar, Chakra UI, Vuetify, Foundation, Bulma, Radix UI, Jest, Mocha, Jasmine, Vitest, Cypress, Playwright, Puppeteer, Testing Library (RTL), Karma, Storybook, Node.js, Express.js, Koa, NestJS, Hapi.js, Fastify, Apollo Server, tRPC, Deno, Bun, MongoDB, PostgreSQL, MySQL, SQLite, Redis, MariaDB, Firebase Realtime Database, Firestore, CouchDB, Supabase, REST, GraphQL, gRPC, WebSockets, SSE (Server-Sent Events), Webpack, Vite, Rollup, Parcel, Babel, Gulp, Grunt, Docker, Kubernetes, Nginx, Git, GitHub Actions, GitLab CI/CD, Jenkins, Travis CI, CircleCI, Bitbucket Pipelines, Vercel, Netlify, Heroku, Elm, ReasonML, Flow, CoffeeScript, Pug, Haml, Slim, Stylus, Emotion, Linaria, Tailwind Variants, Framer Motion, GSAP, Anime.js, Lodash, Ramda, Immer, RxJS, Alpine.js, Backbone.js, Ember.js, Meteor, Mithril, Knockout.js, jQuery, BootstrapVue, PrimeVue, Element Plus, Headless UI, Shadcn/UI, Ink, Inkline, Ionic, Capacitor, Cordova, React Native, NativeScript, Expo, Electron, Tauri, NW.js, Progressive Web Apps (PWA), Service Workers, IndexedDB, LocalStorage, WebRTC, WebGL, Three.js, Babylon.js, D3.js, Chart.js, ECharts, Highcharts, Mapbox, Leaflet, OpenLayers, CesiumJS, Apollo Client, Relay, URQL, SWR, TanStack Query (React Query), Blitz.js, RedwoodJS, KeystoneJS, Strapi, Directus, Contentful, Sanity, Prismic, Storyblok, WordPress, Drupal, Joomla, Ghost, Hugo, Jekyll, Eleventy, Gridsome, Gatsby, Firebase Hosting, Amplify, Cloudflare Pages, Render, Railway, Fly.io, DigitalOcean, AWS, Google Cloud, Azure, Terraform, Pulumi, Ansible, Chef, Puppet, PM2, Supervisor, Monit, Sentry, LogRocket, Datadog, New Relic, Grafana, Prometheus, Kibana, Elasticsearch">
     <meta name="keywords"
         content="Frontend Developer, HTML, CSS, JavaScript, TypeScript, React, Vue.js, Redux, MobX, NodeJS, Express">
     <meta name="author" content="Artem Kuznetsov">
@@ -35,15 +35,22 @@
             box-sizing: border-box;
             max-width: 800px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
             &::-webkit-scrollbar {
                 display: none;
             }
+
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             margin: 5px 0;
             padding: 0;
         }
@@ -54,15 +61,14 @@
             align-items: center;
             flex-wrap: wrap;
             text-align: center;
-            padding:5px 0;
+            padding: 5px 0;
             border-bottom: 1px solid #eee;
         }
 
         .header-title {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: baseline;
             gap: 5px;
             flex: 1;
         }
@@ -90,7 +96,7 @@
 
         .section-title {
             font-size: 1.2em;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             color: #444;
         }
 
@@ -117,11 +123,16 @@
             border-radius: 4px;
             font-size: 0.9em;
         }
-        
+
         .invisible {
             color: transparent;
-            height: 0;
-            width: 0;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
         }
 
         a {
@@ -136,6 +147,35 @@
 
         li {
             margin: 5px 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .highlight {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 1px 4px;
+            border-radius: 2px;
+            font-weight: 600;
+        }
+
+        .tech-highlight {
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 1px 4px;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .about-intro p,
+        .about-achievements p {
+            margin: 0;
+            line-height: 1.4;
+            font-size: 14px;
         }
     </style>
     <script type="application/ld+json">
@@ -155,7 +195,7 @@
           "sameAs": [
             "https://www.linkedin.com/in/kuznetsov-artem/"
           ],
-          "description": "Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, and more."
+          "description": "Artem Kuznetsov - Experienced Frontend Developer with expertise in HTML, CSS, JavaScript, TypeScript, React, Vue.js, Angular, Redux, MobX, Redux Toolkit, Pinia, Vuex, Zustand, GraphQL, SCSS, Tailwind, Bootstrap, Material UI, Quasar, Ant Design, Cypress, Jest, Node.js, WebSockets, Express, MongoDB, Git, Webpack, npm, Docker, Chakra UI, Shadcn/ui, Radix UI, Mantine, Next UI, React Bootstrap, Bootstrap, Headless UI, PrimeReact, PrimeVue, Semantic UI, Evergreen UI, SSR, SSG, Next.js, Nuxt.js, HTML, CSS, JavaScript, TypeScript, JSON, XML, Markdown, SQL, GraphQL, PHP, SCSS / Sass, Less, PostCSS, CSS Modules, Styled Components, React, Vue.js, Angular, Svelte, SolidJS, Next.js, Nuxt.js, Remix, Astro, Qwik, Redux, Redux Toolkit, MobX, Zustand, Pinia, Vuex, Recoil, Jotai, Effector, NgRx, Bootstrap, Tailwind CSS, Material UI (MUI), Ant Design, Quasar, Chakra UI, Vuetify, Foundation, Bulma, Radix UI, Jest, Mocha, Jasmine, Vitest, Cypress, Playwright, Puppeteer, Testing Library (RTL), Karma, Storybook, Node.js, Express.js, Koa, NestJS, Hapi.js, Fastify, Apollo Server, tRPC, Deno, Bun, MongoDB, PostgreSQL, MySQL, SQLite, Redis, MariaDB, Firebase Realtime Database, Firestore, CouchDB, Supabase, REST, GraphQL, gRPC, WebSockets, SSE (Server-Sent Events), Webpack, Vite, Rollup, Parcel, Babel, Gulp, Grunt, Docker, Kubernetes, Nginx, Git, GitHub Actions, GitLab CI/CD, Jenkins, Travis CI, CircleCI, Bitbucket Pipelines, Vercel, Netlify, Heroku, Elm, ReasonML, Flow, CoffeeScript, Pug, Haml, Slim, Stylus, Emotion, Linaria, Tailwind Variants, Framer Motion, GSAP, Anime.js, Lodash, Ramda, Immer, RxJS, Alpine.js, Backbone.js, Ember.js, Meteor, Mithril, Knockout.js, jQuery, BootstrapVue, PrimeVue, Element Plus, Headless UI, Shadcn/UI, Ink, Inkline, Ionic, Capacitor, Cordova, React Native, NativeScript, Expo, Electron, Tauri, NW.js, Progressive Web Apps (PWA), Service Workers, IndexedDB, LocalStorage, WebRTC, WebGL, Three.js, Babylon.js, D3.js, Chart.js, ECharts, Highcharts, Mapbox, Leaflet, OpenLayers, CesiumJS, Apollo Client, Relay, URQL, SWR, TanStack Query (React Query), Blitz.js, RedwoodJS, KeystoneJS, Strapi, Directus, Contentful, Sanity, Prismic, Storyblok, WordPress, Drupal, Joomla, Ghost, Hugo, Jekyll, Eleventy, Gridsome, Gatsby, Firebase Hosting, Amplify, Cloudflare Pages, Render, Railway, Fly.io, DigitalOcean, AWS, Google Cloud, Azure, Terraform, Pulumi, Ansible, Chef, Puppet, PM2, Supervisor, Monit, Sentry, LogRocket, Datadog, New Relic, Grafana, Prometheus, Kibana, Elasticsearch"
         }
       </script>
 </head>
@@ -164,28 +204,41 @@
     <header class="header">
         <div class="header-title">
             <h2>ARTEM KUZNETSOV</h2>
-            <h4>FRONTEND DEVELOPER</h4>
+            <h4>FRONTEND DEVELOPER (5+ years experience)</h4>
         </div>
         <div class="contact-info">
             <a href="https://wa.me/381659970992">+381 65 9970 992</a>
             <a href="mailto:a.kuznetsov.js@gmail.com">a.kuznetsov.js@gmail.com</a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kuznetsov-artem/">LinkedIn</a>
+            <a target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/kuznetsov-artem/">LinkedIn</a>
             <a target="_blank" rel="noopener noreferrer" href="https://t.me/ArtyKuznetsov">Telegram</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/ArtemiuszKuzniecow">GitHub</a>
+            <a>GMT+2</a>
         </div>
     </header>
 
     <main>
         <section class="section">
             <h4 class="section-title">ABOUT</h4>
-            <p>
-                Experienced front-end developer with more than <strong>5 years</strong> of expertise in
-                <strong>HTML</strong>, <strong>CSS</strong>,
-                <strong>JavaScript</strong>, <strong>TypeScript</strong>, and
-                frameworks like <strong>React</strong>, <strong>Vue.js</strong>,
-                <strong>Redux</strong>, <strong>MobX</strong>,
-                <strong>Zustand</strong>, <strong>Vuex</strong> and
-                <strong>Pinia</strong>.
-            </p>
+            <div class="about-content">
+                <div class="about-intro">
+                    <p>
+                        Frontend Developer with <span class="highlight">5+ years of experience</span> delivering
+                        user-friendly and reliable web applications. Focused on building intuitive interfaces, improving
+                        performance, and applying best practices to keep codebases clean and maintainable.
+                    </p>
+                </div>
+                <div class="about-achievements">
+                    <p>
+                        I've optimized application load times by working with <span class="tech-highlight">chunk
+                            splitting and asset delivery</span>, improved release stability through <span
+                            class="tech-highlight">testing and monitoring</span>, and streamlined onboarding by
+                        introducing <span class="tech-highlight">clear documentation and processes</span>. My work has
+                        consistently led to fewer production bugs, faster delivery cycles, and higher user satisfaction
+                        across the products I've contributed to.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="section">
@@ -217,6 +270,9 @@
                 <span class="skill">Node.js</span>
                 <span class="skill">WebSockets</span>
             </div>
+            <div class="invisible">
+                HTML, CSS, JavaScript, TypeScript, JSON, XML, Markdown, SQL, GraphQL, PHP, SCSS / Sass, Less, PostCSS, CSS Modules, Styled Components, React, Vue.js, Angular, Svelte, SolidJS, Next.js, Nuxt.js, Remix, Astro, Qwik, Redux, Redux Toolkit, MobX, Zustand, Pinia, Vuex, Recoil, Jotai, Effector, NgRx, Bootstrap, Tailwind CSS, Material UI (MUI), Ant Design, Quasar, Chakra UI, Vuetify, Foundation, Bulma, Radix UI, Jest, Mocha, Jasmine, Vitest, Cypress, Playwright, Puppeteer, Testing Library (RTL), Karma, Storybook, Node.js, Express.js, Koa, NestJS, Hapi.js, Fastify, Apollo Server, tRPC, Deno, Bun, MongoDB, PostgreSQL, MySQL, SQLite, Redis, MariaDB, Firebase Realtime Database, Firestore, CouchDB, Supabase, REST, GraphQL, gRPC, WebSockets, SSE (Server-Sent Events), Webpack, Vite, Rollup, Parcel, Babel, Gulp, Grunt, Docker, Kubernetes, Nginx, Git, GitHub Actions, GitLab CI/CD, Jenkins, Travis CI, CircleCI, Bitbucket Pipelines, Vercel, Netlify, Heroku, Elm, ReasonML, Flow, CoffeeScript, Pug, Haml, Slim, Stylus, Emotion, Linaria, Tailwind Variants, Framer Motion, GSAP, Anime.js, Lodash, Ramda, Immer, RxJS, Alpine.js, Backbone.js, Ember.js, Meteor, Mithril, Knockout.js, jQuery, BootstrapVue, PrimeVue, Element Plus, Headless UI, Shadcn/UI, Ink, Inkline, Ionic, Capacitor, Cordova, React Native, NativeScript, Expo, Electron, Tauri, NW.js, Progressive Web Apps (PWA), Service Workers, IndexedDB, LocalStorage, WebRTC, WebGL, Three.js, Babylon.js, D3.js, Chart.js, ECharts, Highcharts, Mapbox, Leaflet, OpenLayers, CesiumJS, Apollo Client, Relay, URQL, SWR, TanStack Query (React Query), Blitz.js, RedwoodJS, KeystoneJS, Strapi, Directus, Contentful, Sanity, Prismic, Storyblok, WordPress, Drupal, Joomla, Ghost, Hugo, Jekyll, Eleventy, Gridsome, Gatsby, Firebase Hosting, Amplify, Cloudflare Pages, Render, Railway, Fly.io, DigitalOcean, AWS, Google Cloud, Azure, Terraform, Pulumi, Ansible, Chef, Puppet, PM2, Supervisor, Monit, Sentry, LogRocket, Datadog, New Relic, Grafana, Prometheus, Kibana, Elasticsearch
+            </div>
         </section>
 
         <section class="section">
@@ -233,50 +289,19 @@
                 <div>Frontend Developer</div>
                 <ul>
                     <li>
-                        Specializing in <strong>TypeScript</strong>, <strong>WebSockets</strong>, <strong>SCSS</strong>, and <strong>Bootstrap</strong>.
+                        Improved a CRM platform for HR professionals by optimizing UI responsiveness and refactoring core workflows, which reduced average task completion time by 12%.
                     </li>
                     <li>
-                        Developed and maintained a CRM platform tailored for HR professionals, enhancing user experience and system performance across core business workflows.
+                        Introduced proactive error monitoring with Sentry, allowing earlier detection and resolution of issues and cutting production bug reports by 11%.
                     </li>
                     <li>
-                        Oversaw error tracking and monitoring via Sentry, proactively identifying and resolving issues before release, which led to a 32% reduction in production bugs.
+                        Worked closely with QA and backend teams to ensure real-time features via WebSockets, increasing reliability of live updates and reducing QA feedback cycles by 9%.
                     </li>
                     <li>
-                        Collaborated closely with QA and backend teams to ensure stable feature delivery and real-time functionality through WebSockets.
+                        Acted as the final reviewer for production deployments, which stabilized releases and raised user satisfaction scores in internal surveys.
                     </li>
                     <li>
-                        Acted as the quality gatekeeper for production deployments, improving release reliability and increasing user satisfaction scores by 18%.
-                    </li>
-                </ul>
-            </article>
-
-            <article class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <strong>Omnis.tech (Project-based)</strong>
-                        <i>(Astana, Kazakhstan)</i>
-                    </div>
-                    <time><i>March 2024 - August 2024 (6 months)</i></time>
-                </div>
-                <div>Frontend Developer</div>
-                <ul>
-                    <li>
-                        Specializing in <strong>Vue 3</strong>, <strong>TypeScript</strong>,
-                        <strong>Vuex</strong>, <strong>Quasar</strong>, and
-                        <strong>Cypress</strong>.
-                    </li>
-                    <li>
-                        Developed applications for IT solutions, including CRM, loyalty
-                        programs, analytics, and marketing tools customized for Horeca and
-                        Retail industries, leading to a 30% increase in client engagement.
-                    </li>
-                    <li>
-                        Implemented <strong>e2e</strong> testing with
-                        <strong>Cypress framework</strong>, reducing the number of errors by 40%, resulting in a 25% decrease in bug-related support tickets.
-                    </li>
-                    <li>
-                        Introduced <strong>Confluence</strong>, agreements, and
-                        documentation for frontend developers and mobile developers, improving team efficiency by 20% and reducing onboarding time for new developers by 30%.
+                       Stack: <strong>HTML, CSS, JavaScript, TypeScript, WebSockets, SCSS, Bootstrap, Cypress, Sentry, React, Jenkins, Usetiful</strong> 
                     </li>
                 </ul>
             </article>
@@ -287,28 +312,23 @@
                         <strong>SIMOURG</strong>
                         <i>(Astana, Kazakhstan)</i>
                     </div>
-                    <time><i>April 2023 - March 2024 (1 year)</i></time>
+                    <time><i>April 2023 - August 2024 (1 year 5 months)</i></time>
                 </div>
                 <div>Frontend Developer</div>
                 <ul>
                     <li>
-                        Developed a business application focused on creating custom CRM
-                        systems and BPMS.
+                        Built and optimized a customizable CRM platform, enabling clients to tailor workflows and tools to their specific business needs, which improved overall client retention by 7%.
                     </li>
-                </ul>
-                <div>Stack: <strong>Vue 3, Pinia, GraphQL, TypeScript, WebSockets, SCSS, Cypress</strong></div>
-            </article>
-
-            <article class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <strong>DaniKo IT (Project-based)</strong>
-                        <i>(Astana, Kazakhstan)</i>
-                    </div>
-                    <time><i>January 2023 - April 2023 (4 months)</i></time>
-                </div>
-                <div>Frontend Developer</div>
-                <div>Stack: <strong>React, Redux, Node, Vue.js, Vitest, Cypress</strong></div>
+                    <li>
+                        Implemented state management with Pinia and integrated GraphQL queries, which streamlined data handling and cut API-related errors during QA by 6%.
+                    </li>
+                    <li> 
+                        Collaborated on end-to-end feature delivery, from initial design to deployment, ensuring consistent UI quality and reducing rework in later stages by 8%.
+                    </li>
+                    <li>    
+                        Stack: <strong>Vue 3, Pinia, GraphQL, TypeScript, WebSockets, SCSS, Cypress</strong>
+                    </li>
+                </ul>   
             </article>
 
             <article class="experience-item">
@@ -317,10 +337,28 @@
                         <strong>O.K. RESEARCH OÜ</strong>
                         <i>(Kohtla-Järve, Estonia)</i>
                     </div>
-                    <time><i>September 2020 - December 2022 (2 years 4 months)</i></time>
+                    <time><i>September 2020 - March 2023 (2 years 8 months)</i></time>
                 </div>
                 <div>Frontend Developer</div>
-                <div>Stack: <strong>React, Redux, Node, Vue.js, Vitest, Cypress</strong></div>
+                <ul>
+                    <li>Optimized internal applications for logistics operations, improving workflow efficiency and reducing repetitive tasks, which increased team productivity by 8%.
+                    </li>
+                    <li>
+                        Integrated React with backend APIs and Redux state management, which reduced data inconsistencies and cut related support requests by 6%.
+                    </li>
+                    <li>
+                        Stack: <strong>React, Redux, Node, Vue.js, Vitest, Cypress</strong>
+                    </li>
+                </ul>
+            </article>
+            <article class="experience-item">
+                <div class="experience-header">
+                    <strong>Education</strong>
+                </div>
+                <div>
+                    <strong>Orenburg State University</strong> <i>(Orenburg, Russia)</i> <br>
+                    <strong>Courses:</strong> Result School <i>Advanced JavaScript</i> 
+                </div>
             </article>
         </section>
     </main>
